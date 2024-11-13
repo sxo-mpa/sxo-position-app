@@ -1,0 +1,46 @@
+{
+    "name": "position-app",
+    "type": "module",
+    "version": "1.0.0",
+    "private": true,
+    "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
+    "scripts": {
+        "dev": "vite dev",
+        "build": "vite build",
+        "preview": "vite preview",
+        "deploy": "pnpm exec gh-pages -d build -t true",
+        "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+        "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix"
+    },
+    "devDependencies": {
+        "@antfu/eslint-config": "^3.8.0",
+        "@sveltejs/adapter-auto": "^3.3.1",
+        "@sveltejs/adapter-static": "^3.0.6",
+        "@sveltejs/kit": "^2.7.7",
+        "@sveltejs/vite-plugin-svelte": "^3.1.2",
+        "@tailwindcss/typography": "^0.5.15",
+        "autoprefixer": "^10.4.20",
+        "daisyui": "^4.12.14",
+        "eslint": "^9.14.0",
+        "eslint-plugin-svelte": "^2.46.0",
+        "gh-pages": "^6.2.0",
+        "postcss": "^8.4.47",
+        "svelte": "^4.2.19",
+        "svelte-check": "^4.0.5",
+        "svelte-eslint-parser": "^0.41.1",
+        "svelte-geolocation": "^1.0.0",
+        "svelte-maplibre": "^0.9.14",
+        "tailwindcss": "^3.4.14",
+        "typescript": "^5.6.3",
+        "vite": "^5.4.10"
+    },
+    "dependencies": {
+        "@iconify/svelte": "^4.0.2",
+        "@turf/turf": "^7.1.0",
+        "@types/geojson": "^7946.0.14",
+        "geojson": "link:@types\\geojson",
+        "maplibregl-mapbox-request-transformer": "^0.0.2"
+    }
+}
