@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="modulepreload" href="./_app/immutable/entry/start.CXxdp1_F.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BLdQScKi.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.CViP5g1Q.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.D8JR27av.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.DYReK5QD.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.3kpGUl7Y.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_12qs95e = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/position-app"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.CXxdp1_F.js"),
+						import("./_app/immutable/entry/app.DYReK5QD.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
